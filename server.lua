@@ -22,16 +22,20 @@ RegisterNetEvent("TravelRequest", function(index)
         end
     end)
 
-    --Citizen.Wait((minsleft - 1) * 60000 + (60 - time.s) * 1000)
-    Citizen.Wait(10000)
+    Citizen.Wait((minsleft - 1) * 60000 + (60 - time.s) * 1000)
 
     if cancel then
         return
     end
+
+    if Config.UseESX then
+        local xPlayer = ESX.GetPlayerFromId(_source)
+        xPlayer.removeMoney(Config.Price)
+    end
+
     TriggerClientEvent("TrainArrival", _source)
     SetEntityCoords(_source, (Config.Zones[_index].xyz + vector3(0, 2.5, 0)), false, false, false, false)
     isWaiting = false
-
 end)
 
 function GetTime()

@@ -10,6 +10,9 @@ client_scripts {
     'client.lua',
     'train.lua'
 }
-server_script 'server.lua'
+server_scripts {
+    'server.lua',
+    '@es_extended/imports.lua'
+}
 
 shared_script 'Config.lua'

@@ -2,6 +2,10 @@ Config = {}
 
 Config.EnableRandomTrains = true -- Enables GTA's built in trains which the player can take
 
+Config.UseESX = true -- Enable if you are using ESX and want there to be a price for using the service.
+Config.Price = 50 -- Must be an integer
+
+
 Config.Stations = {
     "LSIA Terminal 4",
     "LSIA Parking",

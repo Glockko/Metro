@@ -56,11 +56,11 @@ function AddMenuStation(menu)
         mainMenu:Visible(not mainMenu:Visible())
     end
 
-    menu.OnIndexChange = function(sender, index)
+    --[[menu.OnIndexChange = function(sender, index)
         if sender.Items[index] == newitem then
             newitem:SetLeftBadge(BadgeStyle.None)
         end
-    end
+    end]]
 
     menu.OnMenuClosed = function(menu)
         AllowMenu = false
@@ -100,7 +100,7 @@ end)
 RegisterNetEvent("TrainArrival", function()
     local string = "Travelling"
     ShowNotification(string)
-    Citizen.Wait(2000)
+    Citizen.Wait(10000)
     AllowMenu = true
 end)
 
