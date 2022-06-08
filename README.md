@@ -1,7 +1,7 @@
 # Metro
 Metro/Subway Fast Travel System
 
-#About
+###About
 This resource was my first project on Fivem. I'm excited to release it and improve it in the future.
 
 ### Installation
