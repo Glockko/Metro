@@ -30,10 +30,11 @@ RegisterNetEvent("TravelRequest", function(index)
 
     if Config.UseESX then
         local xPlayer = ESX.GetPlayerFromId(_source)
-        xPlayer.removeMoney(Config.Price)
+        xPlayer.removeMoney(Config.ESXPrice)
     end
 
     TriggerClientEvent("TrainArrival", _source)
+    Citizen.Wait(800)
     SetEntityCoords(_source, (Config.Zones[_index].xyz + vector3(0, 2.5, 0)), false, false, false, false)
     isWaiting = false
 end)

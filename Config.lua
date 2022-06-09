@@ -1,10 +1,10 @@
 Config = {}
 
-Config.EnableRandomTrains = true -- Enables GTA's built in trains which the player can take
+Config.EnableRandomTrains = true -- Enables GTA's built in trains which the player can also take, although this is probably not synced across players. I have not tested it yet
+Config.DrawDistance = 80
 
-Config.UseESX = true -- Enable if you are using ESX and want there to be a price for using the service.
-Config.Price = 50 -- Must be an integer
-
+Config.UseESX = false -- Enable if you are using ESX and want there to be a price for using the service.
+Config.ESXPrice = 50 -- Must be an integer
 
 Config.Stations = {
     "LSIA Terminal 4",
@@ -25,7 +25,7 @@ Config.Zones = {
     { xyz = vector3(-881.9728, -2315.6069, -11.7328), sizeX = 10.0, sizeY = 10.0 },
     { xyz = vector3(-538.2527, -1277.3044, 26.9016), sizeX = 5.0, sizeY = 5.0 },
     { xyz = vector3(273.4857, -1204.3062, 38.9169), sizeX = 8.0, sizeY = 8.0 },
-    { xyz = vector3(120.4740, -579.5917, 18.8079), sizeX = 8.0, sizeY = 8.0 },
+    { xyz = vector3(120.4740, -579.5917, 18.8079), sizeX = 7.0, sizeY = 7.0 },
     { xyz = vector3(-294.6369, -332.2487, 10.0631), sizeX = 9.0, sizeY = 9.0 },
     { xyz = vector3(-814.4020, -137.1038, 19.9503), sizeX = 9.0, sizeY = 9.0 },
     { xyz = vector3(-1352.3408, -463.4563, 15.0453), sizeX = 9.0, sizeY = 9.0 },
